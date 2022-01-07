@@ -52,7 +52,7 @@ public class main {
 					
 					if (tesT == false) {
 						for (String str : stringList) {
-							if (str.equals(nama)) {
+							if (str.equalsIgnoreCase(nama)) {
 								System.out.print("Sudah terdapat nama yang sama di database, mohon untuk menginput nama yang berbeda!\n");
 								System.out.print("ENTER to return");
 								scan.nextLine();
@@ -238,7 +238,7 @@ public class main {
 					
 					if (tesT1 == false) {
 						for (String str : stringList) {
-							if (str.equals(nama1) && !(str.equals(bentar))) {
+							if (str.equalsIgnoreCase(nama1) && !(str.equalsIgnoreCase(bentar))) {
 								System.out.print("Sudah terdapat nama yang sama di database, mohon untuk menginput nama yang berbeda!\n");
 								System.out.print("ENTER to return");
 								scan.nextLine();
